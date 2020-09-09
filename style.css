@@ -1,0 +1,19 @@
+.main-wrapper {
+  display: flex;
+  justify-content: center;
+}
+body {
+  background:linear-gradient(to right, #f12711, #f5af19);
+  color: #fff;
+  font-family: monospace;
+  font-size: 2em;
+  text-align: center;
+}
+
+canvas {
+  border: solid 2px #fff;
+  height: 60vh;
+}
+#score {
+  font-size: 2.5em;
+}
