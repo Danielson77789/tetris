@@ -17,6 +17,7 @@ function arenaSweap() {
 
     player.score += rowCount * 10;
     rowCount *= 2;
+    speedUp();
   }
 }
 
@@ -145,6 +146,8 @@ function playerReset() {
   if (collide(arena, player)) {
     arena.forEach(row => row.fill(0));
     player.score = 0;
+    speedCount = 0;
+    let dropInterval = 1000;
     updateScore();
   }
 }
@@ -199,6 +202,18 @@ function update(time = 0) {
   }
   draw();
   requestAnimationFrame(update);
+}
+
+let speedCount = 0;
+
+function speedUp() {
+  let args = player.score - speedCount;
+  if (args >= 50) {
+    dropInterval -= 100;
+    speedCount += 50;
+    console.log(dropInterval);
+  }
+
 }
 
 function updateScore() {

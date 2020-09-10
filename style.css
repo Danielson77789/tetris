@@ -17,3 +17,30 @@ canvas {
 #score {
   font-size: 2.5em;
 }
+.menu-wrapper {
+  height: 60vh;
+  height: 580px;
+  width: 350px;
+  border: solid 2px #fff;
+  display: flex;
+  background: black;
+  position: relative;
+  justify-content: center;
+}
+a {
+  color: #fff;
+  background: grey;
+  width: 30%;
+  height: 10%;
+  border: solid 3px white;
+  text-decoration: none;
+  position: absolute;
+  top: 60%;
+  left: 35%;
+}
+
+#title {
+  position: absolute;
+  color: #f12711;
+  top: 20%;
+}
